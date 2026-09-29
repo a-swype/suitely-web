@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Inside a Suitely leasing file</title>
+<meta name="description" content="What a brokerage receives: a tenant file with the intake, statutory documents, search, shortlist and routed tour already done.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230f5d4c'/><circle cx='16' cy='13' r='4.2' fill='%23fbf9f5'/><path d='M14.2 16h3.6l1.1 7.5h-5.8z' fill='%23fbf9f5'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .sample-banner{background:var(--accent-soft);border:1px solid var(--accent);color:var(--accent);
+    border-radius:10px;padding:11px 15px;font-size:.88rem;margin:0 0 26px;font-weight:500}
+  .file-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:26px;align-items:start}
+  @media(max-width:920px){.file-grid{grid-template-columns:1fr}}
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    box-shadow:var(--shadow);padding:20px;margin-bottom:18px}
+  .panel > h3{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:14px}
+  .panel > h3 .by{font-size:.74rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-3)}
+  .brief{display:grid;grid-template-columns:auto 1fr;gap:7px 18px;font-size:.92rem;margin:0}
+  .brief dt{color:var(--ink-3)}
+  .brief dd{margin:0}
+  .unit{border-top:1px solid var(--line);padding:14px 0}
+  .unit:first-of-type{border-top:0;padding-top:0}
+  .unit-top{display:flex;justify-content:space-between;gap:12px;align-items:baseline;flex-wrap:wrap}
+  .unit-top b{font-size:1rem}
+  .unit-rent{font-variant-numeric:tabular-nums;font-weight:650;white-space:nowrap}
+  .unit .meta{font-size:.84rem;color:var(--ink-3);margin:3px 0 8px}
+  .verdict{display:grid;gap:5px;font-size:.89rem}
+  .verdict div{display:flex;gap:8px;align-items:flex-start}
+  .verdict .mark{flex:none;font-weight:700;width:14px;text-align:center}
+  .yes .mark{color:var(--ok)} .no .mark{color:var(--accent)}
+  .rank{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
+    background:var(--brand-soft);color:var(--brand-ink);border-radius:999px;padding:2px 9px;margin-right:8px}
+  .tour{list-style:none;padding:0;margin:0;font-size:.9rem}
+  .tour li{display:grid;grid-template-columns:62px 1fr;gap:12px;padding:9px 0;border-top:1px solid var(--line)}
+  .tour li:first-child{border-top:0}
+  .tour .t{font-variant-numeric:tabular-nums;color:var(--ink-3);font-weight:600}
+  .tour .travel{grid-column:1/-1;font-size:.79rem;color:var(--ink-3);padding-left:74px;margin-top:-4px}
+  .checks{list-style:none;padding:0;margin:0;font-size:.89rem}
+  .checks li{display:flex;gap:9px;padding:7px 0;border-top:1px solid var(--line);align-items:flex-start}
+  .checks li:first-child{border-top:0}
+  .checks .s{flex:none;width:15px;font-weight:700}
+  .done .s{color:var(--ok)} .pending .s{color:var(--ink-3)}
+  .checks .when{display:block;font-size:.77rem;color:var(--ink-3)}
+  .log{list-style:none;padding:0;margin:0;font-size:.86rem}
+  .log li{padding:8px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:78px 1fr;gap:12px}
+  .log li:first-child{border-top:0}
+  .log .t{color:var(--ink-3);font-variant-numeric:tabular-nums}
+  .log .who{font-weight:650}
+  .handoff{border-left:3px solid var(--brand);padding:2px 0 2px 14px;margin-top:4px}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="nav">
+    <a class="logo" href="index.html"><svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0f5d4c"/><circle cx="16" cy="13" r="4.2" fill="#fbf9f5"/><path d="M14.2 16h3.6l1.1 7.5h-5.8z" fill="#fbf9f5"/></svg> Suitely</a>
+    <nav><a href="/">For agents</a><a class="btn" href="/#brief">Send a brief</a></nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" style="padding-bottom:18px">
+  <div class="wrap">
+    <h1 style="max-width:18ch">Inside a leasing file</h1>
+    <p class="lede" style="max-width:62ch">This is what arrives at the brokerage. Every part of it was assembled before a registrant opened the file. The registrant's work starts at the tour and the trade.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+<!--BANNER:START--><p class="sample-banner"><strong>Real inventory, invented client.</strong> Suitely is pre-launch and has no clients, so the brief below is made up. The listings, prices, commute estimates and the ranking are real — produced by our shortlist engine against 356 Toronto rental listings harvested on 29 September 2026. The tour and file-status panels are illustrative.</p><!--BANNER:END-->
+
+    <div class="file-grid">
+      <div>
+        <div class="panel">
+          <h3>Client brief <span class="by">captured once, at intake</span></h3>
+          <dl class="brief">
+            <dt>Client</dt><dd>J. O. — relocating from Ottawa, starts work downtown 3 Nov</dd>
+            <dt>Budget</dt><dd>Up to $2,400/month, firm</dd>
+            <dt>Size</dt><dd>1 bedroom, or 1 bed + den</dd>
+            <dt>Areas</dt><dd>King West, Liberty Village, Fort York</dd>
+            <dt>Move-in</dt><dd>1 November, some flexibility to 15 November</dd>
+            <dt>Must have</dt><dd>In-suite laundry · under 35 min transit to Union</dd>
+            <dt>Won't take</dt><dd>Ground floor · no natural light in bedroom</dd>
+            <dt>Viewing</dt><dd>In Toronto Sat 11 Oct only — everything must fit one day</dd>
+          </dl>
+        </div>
+
+<!--SHORTLIST:START-->
+        <div class="panel">
+          <h3>Shortlist <span class="by">356 live listings reviewed · 129 viable · 4 put forward</span></h3>
+          <div class="unit"><div class="unit-top"><b><span class="rank">Best fit</span>CORNER UNIT LIBERTY VILLAGE 1 BED CONDO</b><span class="unit-rent">$2,200</span></div><p class="meta">1 bed · ~23 min to Union</p><div class="verdict"><div class="yes"><span class="mark">+</span><span>$200 under budget, which leaves real negotiating room</span></div><div class="yes"><span class="mark">+</span><span>About 23 min to Union — inside the 35 min limit with margin</span></div><div class="yes"><span class="mark">+</span><span>In Liberty Village, one of the areas asked for</span></div><div class="yes"><span class="mark">+</span><span>Advertised with laundry</span></div></div></div>
+          <div class="unit"><div class="unit-top"><b>121 SORAUREN AVE. #4 - LUXURY, 1BED/1BATH, LAUNDRY, FREE UTILITIES!</b><span class="unit-rent">$1,995</span></div><p class="meta">1 bed · ~26 min to Union</p><div class="verdict"><div class="yes"><span class="mark">+</span><span>$405 under budget, which leaves real negotiating room</span></div><div class="yes"><span class="mark">+</span><span>Priced under the $2,273 average for this size</span></div><div class="yes"><span class="mark">+</span><span>About 26 min to Union — inside the 35 min limit with margin</span></div><div class="yes"><span class="mark">+</span><span>About 1.9 km from Liberty Village</span></div><div class="yes"><span class="mark">+</span><span>Advertised with laundry</span></div></div></div>
+          <div class="unit"><div class="unit-top"><b>One-bedroom Apartment Available at the heart of Downtown Toronto</b><span class="unit-rent">$2,000</span></div><p class="meta">1 bed · ~10 min to Union</p><div class="verdict"><div class="yes"><span class="mark">+</span><span>$400 under budget, which leaves real negotiating room</span></div><div class="yes"><span class="mark">+</span><span>Priced under the $2,273 average for this size</span></div><div class="yes"><span class="mark">+</span><span>About 10 min to Union — inside the 35 min limit with margin</span></div><div class="yes"><span class="mark">+</span><span>About 1.6 km from King West</span></div><div class="no"><span class="mark">−</span><span>No mention of laundry anywhere in the ad — confirm before booking</span></div></div></div>
+          <div class="unit"><div class="unit-top"><b>STUNNING 1-BEDROOM STEPS FROM ST. LAWRENCE MARKET!</b><span class="unit-rent">$2,050</span></div><p class="meta">1 bed · ~9 min to Union</p><div class="verdict"><div class="yes"><span class="mark">+</span><span>$350 under budget, which leaves real negotiating room</span></div><div class="yes"><span class="mark">+</span><span>Priced under the $2,273 average for this size</span></div><div class="yes"><span class="mark">+</span><span>About 9 min to Union — inside the 35 min limit with margin</span></div><div class="yes"><span class="mark">+</span><span>About 1.7 km from King West</span></div><div class="no"><span class="mark">−</span><span>No mention of laundry anywhere in the ad — confirm before booking</span></div></div></div>
+          <p class="tiny" style="color:var(--ink-3);margin:16px 0 0;border-top:1px solid var(--line);padding-top:12px">
+            <b>Ruled out, and why:</b> 161 the asking price is over the $2,400 limit · 17 0 bedroom, below the 1 needed · 11 looks like shared, which was ruled out · 6 looks like sublet, which was ruled out.
+          </p>
+        </div>
+<!--SHORTLIST:END-->
+
+      </div>
+
+      <div>
+        <div class="panel">
+          <h3>Saturday 11 Oct <span class="by">routed, confirmed</span></h3>
+          <ul class="tour">
+            <li><span class="t">12:45</span><span><b>Bathurst &amp; Front</b><br><span class="tiny" style="color:var(--ink-3)">Concierge sign-in. Listing agent confirmed Wed.</span></span></li>
+            <li class="travel">9 min walk →</li>
+            <li><span class="t">1:20</span><span><b>Fort York Blvd</b><br><span class="tiny" style="color:var(--ink-3)">Lockbox. Elevator booked 1:15–1:45.</span></span></li>
+            <li class="travel">11 min walk →</li>
+            <li><span class="t">2:00</span><span><b>Liberty Village</b><br><span class="tiny" style="color:var(--ink-3)">Listing agent attending in person.</span></span></li>
+            <li class="travel">7 min on the 511 →</li>
+            <li><span class="t">2:40</span><span><b>King &amp; Spadina</b><br><span class="tiny" style="color:var(--ink-3)">Last of the day — strongest location, seen with the others fresh.</span></span></li>
+          </ul>
+          <p class="tiny" style="color:var(--ink-3);margin:14px 0 0">Four buildings, 2 hours 10 minutes, one trip. Four listing brokerages contacted, nine messages, eleven calendar constraints reconciled.</p>
+        </div>
+
+        <div class="panel">
+          <h3>File status</h3>
+          <ul class="checks">
+            <li class="done"><span class="s">✓</span><span>RECO Information Guide delivered and explained<span class="when">2 Oct, 9:14 — acknowledged 9:31</span></span></li>
+            <li class="done"><span class="s">✓</span><span>Representation agreement signed<span class="when">2 Oct, 9:40 — before any search began</span></span></li>
+            <li class="done"><span class="s">✓</span><span>Photo ID verified<span class="when">2 Oct</span></span></li>
+            <li class="done"><span class="s">✓</span><span>Employment letter and two pay stubs<span class="when">3 Oct</span></span></li>
+            <li class="done"><span class="s">✓</span><span>Previous landlord reference, reached and confirmed<span class="when">4 Oct</span></span></li>
+            <li class="done"><span class="s">✓</span><span>Written consent for credit check<span class="when">4 Oct — not run until she applies for a specific unit</span></span></li>
+            <li class="pending"><span class="s">○</span><span>Credit check<span class="when">On application only</span></span></li>
+            <li class="pending"><span class="s">○</span><span>Agreement to Lease<span class="when">Drafted on offer, for registrant review</span></span></li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <h3>Where the registrant picks up</h3>
+          <p class="muted" style="font-size:.92rem;margin-bottom:10px">Everything above was done before the file was assigned. From here it is entirely yours:</p>
+          <ul class="plain" style="font-size:.9rem;color:var(--ink-2);padding-left:18px;margin:0">
+            <li>Attend the four viewings on Saturday and host them.</li>
+            <li>Carry the trade and the client relationship.</li>
+            <li>Review, amend and sign off the Agreement to Lease we draft — nothing goes to a client or a co-operating brokerage without you.</li>
+          </ul>
+          <div class="handoff" style="margin-top:14px">
+            <p class="tiny" style="margin:0;color:var(--ink-2)"><b>Supervision.</b> The trade sits with your brokerage and your broker supervises it. We produce drafts and recommendations, not decisions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel" style="margin-top:8px">
+      <h3>What the coordination actually cost <span class="by">9 days, before a registrant was needed</span></h3>
+      <ul class="log">
+        <li><span class="t">2 Oct</span><span><span class="who">Intake</span> — brief captured, information guide delivered and acknowledged, representation agreement signed. Search live within the hour.</span></li>
+        <li><span class="t">2–10 Oct</span><span><span class="who">Search</span> — 34 matching units reviewed as they appeared, against the full brief rather than price and bedrooms alone.</span></li>
+        <li><span class="t">6 Oct</span><span><span class="who">Client</span> — flagged that 15 Nov availability on King &amp; Spadina would mean two weeks of overlap. She kept it on the list knowingly.</span></li>
+        <li><span class="t">7–9 Oct</span><span><span class="who">Scheduling</span> — four listing brokerages, nine messages, one elevator booking, one concierge sign-in, and eleven constraints reconciled into a single Saturday afternoon.</span></li>
+        <li><span class="t">9 Oct</span><span><span class="who">Documents</span> — ID, employment, references and written credit consent collected and checked. Credit not run, because she has not applied for anything yet.</span></li>
+        <li><span class="t">10 Oct</span><span><span class="who">Handoff</span> — file assigned with the brief, the shortlist and reasons, the routed tour, building access notes, and the client's two open questions.</span></li>
+      </ul>
+      <p class="tiny" style="color:var(--ink-3);margin:14px 0 0">This is the part that normally eats an agent's week and earns nothing until it closes. It is also the part that does not require a licence — which is exactly why we do it and you don't.</p>
+    </div>
+
+    <div style="text-align:center;margin:34px 0 8px">
+      <p style="max-width:52ch;margin:0 auto 16px;color:var(--ink-3);font-size:.95rem">This one was built for an invented client. The useful version is one built for yours &mdash; send the brief with nothing identifying in it and you'll get the same thing back, same working day, free.</p>
+      <a class="btn lg" href="/#brief">Send a brief, get a shortlist</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="disclosure">
+      <p><strong>Suitely is not yet a registered real estate brokerage and is not currently providing leasing services.</strong> Trading in real estate in Ontario, including leasing, requires registration with the Real Estate Council of Ontario. Everything on this page is an illustrative sample built to show how a file is prepared — it is not a real client, real listings, or a real transaction, and it is not an offer to trade in real estate. © 2026 Suitely.</p>
+    </div>
+  </div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
